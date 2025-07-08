@@ -26,11 +26,40 @@
 
     .main-grid {
       display: grid;
+      grid-template-columns: 40% 60%;
+      /* Aquí el cambio */
+      gap: 10px;
+      padding: 5px;
+      align-items: stretch;
+      /* Este también cambia para igualar altura */
+    }
+
+
+    /* .main-grid {
+      display: grid;
       grid-template-columns: 3fr 4fr;
       gap: 10px;
       padding: 5px;
       align-items: start;
+    } */
+    /* 
+    .left-section {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    } */
+
+    .left-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      gap: 5px;
     }
+
+
 
     .qr-grid {
       display: grid;
@@ -38,6 +67,24 @@
       gap: 5px;
       align-items: stretch;
     }
+
+    .Actionlog {
+      background-color: #2a2a2a;
+      border: 2px solid #ad0000;
+      border-radius: 5px;
+      padding: 5px;
+      text-align: center;
+      text-align: center;
+    }
+
+    .Actionlog img {
+      width: 100%;
+      height: auto;
+      max-height: 150px;
+      /* Ajusta según lo que necesites */
+      object-fit: contain;
+    }
+
 
     .qr-cell {
       background-color: #2a2a2a;
@@ -76,7 +123,7 @@
 
     iframe {
       width: 100%;
-      height: 330px;
+      height: 430px;
       border: none;
       border-radius: 10px;
     }
@@ -148,38 +195,42 @@
 
   <!-- Primera fila: 4 QR en 2x2 + gráfica -->
   <div class="main-grid">
-
-    <div class="qr-grid">
-      <div class="qr-cell">
-        <img src="QR Matriz de epps almacen.png" alt="QR EPPS">
-        <div>QR EPPS</div>
+    <div class="left-section">
+      <div class="qr-grid">
+        <div class="qr-cell">
+          <img src="QR Matriz de epps almacen.png" alt="QR EPPS">
+          <div>QR EPPS</div>
+        </div>
+        <div class="qr-cell">
+          <img src="QR INSPECCIONES OPERADOR LOGÍSTICO.png" alt="Checklist herramientas">
+          <div>Checklist herramientas</div>
+        </div>
+        <div class="qr-cell">
+          <img src="QR SOP Sorting.png" alt="Procedimientos">
+          <div>SOP</div>
+        </div>
+        <div class="qr-cell">
+          <img src="QR RACI Sorting.png" alt="QR RACI">
+          <div>QR RACI</div>
+        </div>
+        <div class="qr-cell"><img src="QR prod sorting.jpg">
+          <div>Reportar mi productividad</div>
+        </div>
+        <div class="qr-cell"><img src="QR Informe sorting.png">
+          <div>Resultados mes</div>
+        </div>
+        <div class="qr-cell"><img src="QR 5Ss Sorting.png">
+          <div>5S's</div>
+        </div>
+        <div class="qr-cell"><img src="QR 5WHY.jpg">
+          <div>5 Porqués</div>
+        </div>
+        <div class="qr-cell"><img src="QR sitio Web Montevideo.png">
+          <div>WEB Montevideo</div>
+        </div>
       </div>
-      <div class="qr-cell">
-        <img src="QR INSPECCIONES OPERADOR LOGÍSTICO.png" alt="Checklist herramientas">
-        <div>Checklist herramientas</div>
-      </div>
-      <div class="qr-cell">
-        <img src="QR SOP Sorting.png" alt="Procedimientos">
-        <div>SOP</div>
-      </div>
-      <div class="qr-cell">
-        <img src="QR SOP Sorting.png" alt="QR RACI">
-        <div>QR RACI</div>
-      </div>
-      <div class="qr-cell"><img src="QR prod sorting.jpg">
-        <div>Reportar mi productividad</div>
-      </div>
-      <div class="qr-cell"><img src="QR Informe sorting.png">
-        <div>Resultados mes</div>
-      </div>
-      <div class="qr-cell"><img src="QR SOP Sorting.png">
-        <div>5S's</div>
-      </div>
-      <div class="qr-cell"><img src="QR SOP Sorting.png">
-        <div>5 Porqués</div>
-      </div>
-      <div class="qr-cell"><img src="QR sitio Web Montevideo.png">
-        <div>WEB Montevideo</div>
+      <div class="Actionlog">
+        <img src="actionlog.png" alt="Actionlog">
       </div>
     </div>
 
